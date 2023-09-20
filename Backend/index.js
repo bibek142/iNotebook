@@ -8,7 +8,7 @@ const app = express()
 const port = 5000
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://i-notebook-app-kappa.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   }
