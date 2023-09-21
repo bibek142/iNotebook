@@ -16,6 +16,8 @@ const Noteitem = (props) => {
                     <i className="fa-solid fa-pen-to-square mx-2" onClick={()=>{updateNote(note)}}></i>
                     </div>
                     <p className="card-text">{note.description}</p>
+    <p className="card-text my-1">{note.tag}</p>
+                    <p className="card-text my-1">{new Date(note.date).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}</p>
                     
                 </div>
             </div>
